@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>Search-in-Eudic@Roc Sun</string>
+	<key>connections</key>
+	<dict>
+		<key>A8AB98B1-D9E0-4299-B4C9-71D472D24DA9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9663404-54A4-40FA-9845-D31744251052</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E66B39CA-F029-4926-AD33-DDDC231A8166</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CB9CE05C-8CBB-48BE-91D2-F54F9C60C2AA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E7D40EEA-83AD-4186-B35C-1618D5C2D6BC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6F3FA31F-E350-4197-BD90-DE81D5FBFB4D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Roc Sun</string>
+	<key>description</key>
+	<string>Search words in EuDic. v1.0.1</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Search in EuDic</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>ed</string>
+				<key>subtext</key>
+				<string>Search for "{query}" in the EuDic</string>
+				<key>text</key>
+				<string>Search in EuDIc</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>E7D40EEA-83AD-4186-B35C-1618D5C2D6BC</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>do shell script "open /Applications/Eudb_en_free.app"
+
+tell application "Eudb_en_free" 
+	show dic with word "{query}"
+end tell</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>6F3FA31F-E350-4197-BD90-DE81D5FBFB4D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>tell application "Eudb_en_free"	speak word with word "{query}"end tell</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D9663404-54A4-40FA-9845-D31744251052</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>eds</string>
+				<key>subtext</key>
+				<string>Speak "{query}"</string>
+				<key>text</key>
+				<string>Search in Eudic</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>A8AB98B1-D9E0-4299-B4C9-71D472D24DA9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>do shell script "open /Applications/Eudb_en_free.app"
+
+tell application "Eudb_en_free"
+	show dic with word "{query}"
+end tell</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>CB9CE05C-8CBB-48BE-91D2-F54F9C60C2AA</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>edw</string>
+				<key>subtext</key>
+				<string>Show wiki with word "{query}"</string>
+				<key>text</key>
+				<string>Search in Eudic</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>E66B39CA-F029-4926-AD33-DDDC231A8166</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>6F3FA31F-E350-4197-BD90-DE81D5FBFB4D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>265</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
+		<key>A8AB98B1-D9E0-4299-B4C9-71D472D24DA9</key>
+		<dict>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>125</integer>
+		</dict>
+		<key>CB9CE05C-8CBB-48BE-91D2-F54F9C60C2AA</key>
+		<dict>
+			<key>xpos</key>
+			<integer>275</integer>
+			<key>ypos</key>
+			<integer>235</integer>
+		</dict>
+		<key>D9663404-54A4-40FA-9845-D31744251052</key>
+		<dict>
+			<key>xpos</key>
+			<integer>270</integer>
+			<key>ypos</key>
+			<integer>120</integer>
+		</dict>
+		<key>E66B39CA-F029-4926-AD33-DDDC231A8166</key>
+		<dict>
+			<key>xpos</key>
+			<integer>25</integer>
+			<key>ypos</key>
+			<integer>240</integer>
+		</dict>
+		<key>E7D40EEA-83AD-4186-B35C-1618D5C2D6BC</key>
+		<dict>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
+	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>v1.0.1</string>
+	<key>webaddress</key>
+	<string>https://github.com/moonlitusun/alfred-workflows</string>
+</dict>
+</plist>
