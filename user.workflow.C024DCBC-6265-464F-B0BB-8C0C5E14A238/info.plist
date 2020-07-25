@@ -37,33 +37,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>on run
-  set theQuery to "{query}"
-  do shell script "/usr/local/bin/code {query}"
-  return theQuery
-end run</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>AD2CE374-59A7-426E-85E8-EB3FD6E3DA7C</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>anchorfields</key>
 				<true/>
 				<key>argumenttrimmode</key>
@@ -121,7 +94,6 @@ end run</string>
 				<string></string>
 				<key>scopes</key>
 				<array>
-					<string>~/DZ</string>
 					<string>~/Gitee</string>
 					<string>~/Github</string>
 				</array>
@@ -142,6 +114,33 @@ end run</string>
 			<string>alfred.workflow.input.filefilter</string>
 			<key>uid</key>
 			<string>9297E5E0-B0BE-42A5-903F-5217E6811C91</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run
+  set theQuery to "{query}"
+  do shell script "/usr/local/bin/code {query}"
+  return theQuery
+end run</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>AD2CE374-59A7-426E-85E8-EB3FD6E3DA7C</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>

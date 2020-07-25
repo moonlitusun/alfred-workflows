@@ -61,7 +61,7 @@
 				<key>fixedorder</key>
 				<false/>
 				<key>items</key>
-				<string>[{"title":"tinypng","arg":"https:\/\/tinypng.com\/developers\/reference\/nodejs"}]</string>
+				<string>[{"title":"tinypng","arg":"https:\/\/tinypng.com\/developers\/reference\/nodejs"},{"title":"Shell","arg":"https:\/\/www.runoob.com\/linux\/linux-shell.html"}]</string>
 				<key>keyword</key>
 				<string>doc</string>
 				<key>runningsubtext</key>
