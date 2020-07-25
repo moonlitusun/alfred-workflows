@@ -47,7 +47,7 @@
 	app.includeStandardAdditions = true;
 	app.doShellScript('cd  "/Users/rocsun/Library/Application Support/Alfred/Alfred.alfredpreferences/workflows"');
 		
-	if (query === "pull") {
+	if (query === 'pull') {
 		console.log(app.doShellScript('git pull origin master'));
 	} else if (query === 'push') {
 		console.log(app.doShellScript('git add . &amp;&amp; git commit -m "sync automation" &amp;&amp; git push origin master'));
