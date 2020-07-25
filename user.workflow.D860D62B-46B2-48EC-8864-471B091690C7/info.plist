@@ -50,9 +50,7 @@
 	if (query === "pull") {
 		console.log(app.doShellScript('git pull origin master'));
 	} else if (query === 'push') {
-		console.log(app.doShellScript('git add .'));
-		console.log(app.doShellScript('git commit -m "sync automation"'));
-		console.log(app.doShellScript('git push origin master'));
+		console.log(app.doShellScript('git add . &amp;&amp; git commit -m "sync automation" &amp;&amp; git push origin master'));
 	}
 
   	return query;
