@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string></string>
+	<string>Sync workflow@Roc Sun</string>
 	<key>connections</key>
 	<dict>
 		<key>2774B917-5759-494D-8497-8F3D2122B4A3</key>
@@ -23,7 +23,7 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string></string>
+	<string>Roc Sun</string>
 	<key>description</key>
 	<string></string>
 	<key>disabled</key>
@@ -81,7 +81,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>sync</string>
+				<string>Sync workflow</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -113,6 +113,6 @@
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/moonlitusun/alfred-workflows</string>
 </dict>
 </plist>
