@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>connections</key>
+	<dict>
+		<key>2774B917-5759-494D-8497-8F3D2122B4A3</key>
+		<array/>
+		<key>74FA5BB7-7675-4D6F-923B-86E765A6C6F8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2774B917-5759-494D-8497-8F3D2122B4A3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string></string>
+	<key>description</key>
+	<string></string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Sync workflow</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>function run(argv) {
+	const query = argv[0];
+
+	const app = Application.currentApplication();
+	app.includeStandardAdditions = true;
+	app.doShellScript('cd  "/Users/rocsun/Library/Application Support/Alfred/Alfred.alfredpreferences/workflows"');
+		
+	if (query === "pull") {
+		console.log(app.doShellScript('git status'));
+	} else if (query === 'push') {
+		console.log(app.doShellScript('git add .'));
+		console.log(app.doShellScript('git commit -m "sync automation"'));
+		console.log(app.doShellScript('git push origin master'));
+	}
+
+  	return query;
+}</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>2774B917-5759-494D-8497-8F3D2122B4A3</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>sync</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>sync</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>74FA5BB7-7675-4D6F-923B-86E765A6C6F8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>2774B917-5759-494D-8497-8F3D2122B4A3</key>
+		<dict>
+			<key>xpos</key>
+			<integer>340</integer>
+			<key>ypos</key>
+			<integer>15</integer>
+		</dict>
+		<key>74FA5BB7-7675-4D6F-923B-86E765A6C6F8</key>
+		<dict>
+			<key>xpos</key>
+			<integer>45</integer>
+			<key>ypos</key>
+			<integer>55</integer>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
