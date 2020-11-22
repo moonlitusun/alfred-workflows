@@ -59,30 +59,6 @@
 						<key>words</key>
 						<true/>
 					</dict>
-					<dict>
-						<key>field</key>
-						<string>kMDItemAlternateNames</string>
-						<key>not</key>
-						<false/>
-						<key>split</key>
-						<true/>
-						<key>value</key>
-						<string>{query}</string>
-						<key>words</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>field</key>
-						<string>kMDItemFinderComment</string>
-						<key>not</key>
-						<false/>
-						<key>split</key>
-						<true/>
-						<key>value</key>
-						<string>{query}</string>
-						<key>words</key>
-						<true/>
-					</dict>
 				</array>
 				<key>includesystem</key>
 				<true/>
