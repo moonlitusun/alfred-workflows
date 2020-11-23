@@ -70,8 +70,8 @@
 				<string></string>
 				<key>scopes</key>
 				<array>
-					<string>~/Gitee</string>
-					<string>~/Github</string>
+					<string>/Volumes/extra-ssd/Gitee</string>
+					<string>/Volumes/extra-ssd/Github</string>
 				</array>
 				<key>sortmode</key>
 				<integer>0</integer>
