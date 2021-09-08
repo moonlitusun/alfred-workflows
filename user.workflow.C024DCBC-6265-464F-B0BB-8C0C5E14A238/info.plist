@@ -70,6 +70,8 @@
 				<string></string>
 				<key>scopes</key>
 				<array>
+					<string>/Volumes/extra-ssd/code-library-internal</string>
+					<string>/Volumes/extra-ssd/code-project</string>
 					<string>/Volumes/extra-ssd/Gitee</string>
 					<string>/Volumes/extra-ssd/Github</string>
 				</array>
@@ -103,7 +105,7 @@
 				<key>script</key>
 				<string>on run
   set theQuery to "{query}"
-  do shell script "/usr/local/bin/code {query}"
+  do shell script "cd {query} &amp;&amp; /usr/local/bin/code ."
   return theQuery
 end run</string>
 				<key>scriptargtype</key>
